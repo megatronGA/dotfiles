@@ -1,0 +1,17 @@
+[user]
+	name = Scott Craig
+	email = scottymcraig@icloud.com
+	signingkey = 2DB150C9004A6101
+[gpg]
+	program = gpg
+
+[core]
+
+	# Make `git rebase` safer on macOS
+	# More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
+	trustctime = false
+
+[commit]
+
+	# https://help.github.com/articles/signing-commits-using-gpg/
+	gpgsign = true
