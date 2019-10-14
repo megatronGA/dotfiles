@@ -4,6 +4,7 @@ call plug#begin(g:plugin_path)
 
 " Theme
 Plug 'joshdick/onedark.vim'
+Plug 'liuchengxu/space-vim-dark'
 " Language plugins
 Plug 'sheerun/vim-polyglot'
 " Status bar
@@ -11,6 +12,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
+Plug 'OrangeT/vim-csharp'
 
 call plug#end()
 
@@ -24,8 +26,12 @@ endfunction
 set background=dark
 
 "joshdick/onedark.vim
-colorscheme onedark
-hi Comment guifg=#808080
+"colorscheme onedark
+"hi Comment guifg=#808080
+
+" liuchengxu/space-vim-dark
+colorscheme space-vim-dark
+
 
 autocmd VimEnter * NERDTree | wincmd p
 
@@ -73,7 +79,7 @@ syntax on
 " Highlight current line
 set cursorline
 " Make tabs as wide as two spaces
-set tabstop=2
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 " Show “invisible” characters
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set list
